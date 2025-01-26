@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Opcional: Estilo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Lista de Contactos</h1>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Fecha de Registro</th>
+        </tr>
+        </thead>
+        <tbody id="contactos-tbody">
+            <tr th:each="usuario : ${usuarios}">
+                <td th:text="${usuario.nombre}"></td>
+                <td th:text="${usuario.fechaNacimiento}"></td>
+                <td th:text="${usuario.fechaRegistro}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="botones">
+    <a class="fcc-btn" href="/nuevo">Crear Contacto</a>
+    <a class="fcc-btn" href="/contactos">Lista de Contactos</a>
+</div>
+</body>
+</html>

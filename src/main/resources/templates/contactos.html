@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Listado de Contactos</h1>
+    <div class="tabla">
+      <table>
+        <tr class="encabezado">
+          <th>Nombre</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Fecha de Registro</th>
+        </tr>
+        <tr th:each="usuario : ${usuarios}">
+          <td th:text="${usuario.nombre}"></td>
+          <td th:text="${usuario.fechaNacimiento}"></td>
+          <td th:text="${usuario.fechaRegistro}"></td>
+        </tr>
+      </table>
+    </div>
+    <br>
+  <div class="botones">
+    <a class="fcc-btn" href="/">Home</a>
+  </div>
+</body>
+</html>

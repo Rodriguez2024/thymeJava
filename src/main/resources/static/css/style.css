@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* tabla con estilo css */
+h1 {
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 600; /* Poner un valor válido aquí, por ejemplo 400 o 600 */
+  font-style: normal;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0; /* Quitar el espacio entre celdas */
+}
+
+th {
+  background-color: #003366; /* Azul marino */
+  color: white; /* Texto blanco */
+  padding: 8px;
+  text-align: center; /* Centrar el texto en los encabezados */
+  border: 1px solid #000;
+  font-size: 15px;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.fcc-btn-1 {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+}
+
+.contenedor1 {
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column; /* Hace que los botones se apilen verticalmente */
+  /* gap: 5px; /* Agrega espacio entre los botones */
+  /* align-items: center; /* Alinea los botones al centro */
+  align-items: flex-start;
+  width: 100%
+}
+
+.botonesH {
+  display: flex;
+  justify-content: space-between; /* Espacia los botones de manera uniforme */
+  gap: 10px; /* Opcional: para controlar el espacio entre los botones */
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+/* Cada botón */
+.botones a {
+  /*padding: 10px;*/
+  padding: 8px 16px; /* Ajustar el padding para hacer los botones más pequeños */
+  background-color: #135eba;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%; /* Aseguramos que cada botón ocupe el 100% de su contenedor */
+  /*width: auto;*/
+  max-width: 100px; /* Limita el ancho máximo si es necesario */
+}
+
+.botonesH a {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.fcc-btn {
+  border-radius: 16px;
+  background: #135eba;
+  padding: 16px 24px;
+  width: 100%; /* Corrige el comentario mal formado */
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  margin-top: 2rem;
+}
+
+.fcc-tbn:disabled {
+  background: #898989;
+}
+
+/* Estilo para el botón */
+button[type="submit"] {
+  padding: 8px 16px; /* El mismo padding que en los botones */
+  background-color: #135eba; /* El mismo color de fondo */
+  color: white; /* El mismo color de texto */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px; /* Redondear las esquinas */
+  border: none; /* Quitar el borde por defecto */
+  width: 100%; /* El ancho se ajusta al contenido */
+  max-width: 130px; /* Establecer un ancho máximo */
+  cursor: pointer; /* Cambio de cursor cuando el ratón pasa sobre el botón */
+}
+
+button[type="submit"]:hover {
+  background-color: #0f4b91; /* Un tono más oscuro para el hover */
+}
+
+/* Estilo para el contenedor del formulario */
+form {
+  display: flex;
+  flex-direction: column; /* Los elementos estarán apilados verticalmente */
+  gap: 15px; /* Espacio entre los elementos del formulario */
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario en la página */
+  padding: 20px; /* Añade un poco de espacio alrededor del formulario */
+  background-color: #f9f9f9; /* Fondo gris claro para el formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra suave */
+}
+
+/* Estilo para el contenedor del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las etiquetas del formulario */
+form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Estilo para los inputs */
+form input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Contenedor de los botones */
+.botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea los botones a la izquierda */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 20px;
+}
+
+/* Estilo para los botones dentro de .botones */
+.botones button,
+.botones a {
+  padding: 10px 20px;
+  background-color: #135eba;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Los botones ocupan el 100% del contenedor */
+  max-width: 200px; /* Máximo ancho para los botones */
+}
+
+/* Efecto hover en los botones */
+.botones button:hover,
+.botones a:hover {
+  background-color: #0f4b91;
+}
